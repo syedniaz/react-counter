@@ -6,15 +6,15 @@ function Counter(){
     const [num, setNum] = useState(0);
 
     function inc(){
-        setNum(num+1);
+        setNum(n => n+1);
     }
 
     function dec(){
-        setNum(num-1);
+        setNum(n => n-1);
     }
 
     function reset(){
-        setNum(0)
+        setNum(n => n = 0)
     }
 
     return(
